@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<h1 style="font-size:50px">Ejercicio 4</h1>
+<h2 style="font-size:33px">Usa l’element picture d’HTML5 per a crear un HTML que 
+mostri una imatge diferent segons la mida de la pantalla:</h2>
+
+<h2 style="font-size:33px">Mostra un gegant d’Elbaph si la finestra té una amplada més gran de 1200 píxels</h2>
+<h2 style="font-size:33px">Mostra Kaido si la finestra té una amplada més gran de 1100 píxels i menys de 1200.</h2>
+<h2 style="font-size:33px">Mostra Bigmom si la finestra té una amplada més gran de 1000 píxels i menys de 1100.</h2>
+<h2 style="font-size:33px">Mostra Franky si la finestra té una amplada més gran de 900 píxels i menys de 1000.</h2>
+<h2 style="font-size:33px">Mostra Soulking si la finestra té una amplada més gran de 800 píxels i menys de 900.</h2>
+<h2 style="font-size:33px">Mostra Luffy si la finestra té una amplada inferior a 800 píxels.</h2>
+
+
+<picture>
+  <source media="(min-width: 1200px)" srcset="img/gegelph.jpg">
+  <source media="(min-width: 1100px)" srcset="img/kaido.jpg">
+  <source media="(min-width: 1000px)" srcset="img/bigmom.jpg">
+  <source media="(min-width: 900px)" srcset="img/franky.jpg">
+  <source media="(min-width: 800px)" srcset="img/soulking.jpg">
+  <source media="(max-width: 800px)" srcset="img/luffy.jpg">
+  <img src="img_luffy.jpg" style="width:auto;">
+</picture>
+
+
+<h2 style="font-size:30px">La imatge té una amplada de X píxels, per tant, es mostrará....</h2>
+
+</body>
+</html>
